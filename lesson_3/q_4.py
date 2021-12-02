@@ -25,10 +25,10 @@ while True:
 
 def expo(num_1, num_2):
 	global number
-	for i in range(1, abs(num_2)):		
-		num_1 *= num_1
 	number = num_1
-	return 1 / num_1
+	for i in range(1, abs(num_2)):		
+		number *= num_1
+	return 1 / number
 
 print(f'Получилось: {expo(plus_number, minus_number)}, В виде дроби: 1/{number}') 
 
